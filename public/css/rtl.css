@@ -1,0 +1,300 @@
+@font-face{
+    font-family:IRANSans;
+    font-style:normal;
+    font-weight:700;
+    src:url(../fonts/IranSans/IRANSansWeb_Bold.f2cb5d5.eot);
+    src:url(../fonts/IranSans/IRANSansWeb_Bold.43a0ecf.woff2) format("woff2"),
+    url(../fonts/IranSans/IRANSansWeb_Bold.e4ed975.woff) format("woff"),
+    url(../fonts/IranSans/IRANSansWeb_Bold.ebec177.ttf) format("truetype")
+}
+@font-face{
+    font-family:IRANSans;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/IranSans/IRANSansWeb.d393186.eot);
+    src:url(../fonts/IranSans/IRANSansWeb.0b5055a.woff2) format("woff2"),
+    url(../fonts/IranSans/IRANSansWeb.66b5cb3.woff) format("woff"),
+    url(../fonts/IranSans/IRANSansWeb.c26a9eb.ttf) format("truetype")
+}
+@font-face{
+    font-family:iranyekan;
+    font-style:normal;
+    font-weight:700;
+    src:url(../fonts/Yekan/iranyekanwebboldfanum.eot);
+    src:url(../fonts/Yekan/iranyekanwebboldfanum.eot?#iefix)
+    format('embedded-opentype'),url(../fonts/Yekan/iranyekanwebboldfanum.woff)
+    format('woff'),url(../fonts/Yekan/iranyekanwebboldfanum.ttf)
+    format('truetype');font-display:swap}
+@font-face{
+    font-family:iranyekan;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/Yekan/iranyekanwebregularfanum.eot);
+    src:url(../fonts/Yekan/iranyekanwebregularfanum.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Yekan/iranyekanwebregularfanum.woff) format('woff'),
+    url(../fonts/Yekan/iranyekanwebregularfanum.ttf) format('truetype');
+    font-display:swap
+}
+@font-face{
+    font-family:iranyekan;
+    font-style:normal;
+    font-weight:500;
+    src:url(../fonts/Yekan/iranyekanwebmediumfanum.eot);
+    src:url(../fonts/Yekan/iranyekanwebmediumfanum.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Yekan/iranyekanwebmediumfanum.woff) format('woff'),
+    url(../fonts/Yekan/iranyekanwebmediumfanum.ttf) format('truetype');
+    font-display:swap
+}
+@font-face{
+    font-family:iranyekan;
+    font-style:normal;
+    font-weight:300;
+    src:url(../fonts/Yekan/iranyekanweblightfanum.eot);
+    src:url(../fonts/Yekan/iranyekanweblightfanum.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Yekan/iranyekanweblightfanum.woff) format('woff'),
+    url(../fonts/Yekan/iranyekanweblightfanum.ttf) format('truetype');
+    font-display:swap
+}
+body{
+    text-align: right;
+    direction: rtl;
+    font-weight:normal;
+    font-size:1.3rem !important;
+    font-family: 'IRANSans',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial, serif;
+}
+.numbers{
+    text-align: right;
+    direction: rtl;
+    font-weight: normal;
+    font-size: 1.3rem !important;
+    font-family: 'iranyekan', Tahoma, Arial, serif;
+}
+.content-page {
+    margin-left:0;
+    margin-right: 240px;
+}
+.topbar-first {
+    float: right;
+    height: 57px;
+    line-height: 40px;
+    position: relative;
+    width: 240px;
+    z-index: 1;
+}
+.topbar .menu-toggle,
+.topbar .app-search,
+.topbar .profile-link img,
+.side-menu .profile-menu img,
+.widget-row .widget-box .first-widget
+{
+    float: right!important;
+}
+.app-search i {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: auto;
+    font-size: 20px;
+}
+.top-right-nav {
+    padding-left: 30px;
+    float: left !important;
+}
+@media (min-width: 768px){
+    .navbar-nav>li {
+        float: right;
+    }
+}
+.widget-box div i {
+    float: left!important;
+}
+.widget-box div i.loading {
+    float: right!important;
+}
+.text-right {
+    text-align: left !important;
+}
+.page-title h3 {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.page-title i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.metismenu .arrow {
+    float: left;
+}
+.metismenu>li>a i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.nav.nav-second-level{
+    padding-right: 0;
+}
+.nav.nav-second-level>li>a {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.metismenu .fa.arrow:before {
+    content: "\f105";
+}
+.footer {
+    right: 240px;
+    /*text-align: right !important;*/
+    padding: 20px 30px;
+    position: absolute;
+    left: 0;
+}
+body.widescreen.fixed-left .side-menu .metismenu>li .nav-second-level{
+    right:70px;
+    left:auto;
+}
+body.widescreen.fixed-left .content-page{
+    margin-right: 70px;
+    margin-left:0;
+}
+body.widescreen.fixed-left .footer{
+    right: 70px;
+    left: auto;
+}
+th {
+    text-align: right;
+}
+.sidebar {
+    right: -270px;
+    left: auto;
+}
+.sidebar.active {
+    left: 0;
+    right: auto;
+}
+.form-group{
+    text-align: right !important;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: right;
+}
+.dataTables_paginate{
+    text-align: left !important;
+}
+.btn-table{
+    padding: 0 12px;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: right;
+}
+.topbar .profile-link img{
+    float: left !important;
+}
+table.dataTable thead>tr>td.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc {
+    padding-left: 30px;
+    padding-right: 0;
+}
+table.dataTable thead th.sorting:after, table.dataTable thead th.sorting_asc:after, table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    display: block;
+    font-family: FontAwesome;
+    right: auto;
+}
+.text-en{
+    direction: ltr;
+}
+.dataTables_filter{
+    float: left;
+}
+ul.nav-tabs{
+    padding-right: 0;
+}
+ul.nav-tabs li{
+    float: right;
+}
+@media (min-width: 992px){
+    .col-md-offset-8 {
+        margin-right: 66.66666667%;
+        margin-left: 0;
+    }
+    .col-md-offset-3 {
+        margin-right: 25%;
+        margin-left: 0;
+    }
+    .col-md-offset-2 {
+        margin-right: 16.66666667%;
+        margin-left: 0;
+    }
+}
+.top-right-nav .badge {
+    right: 4px;
+    left: auto !important;
+    top: 6px;
+}
+.dropdown-menu.dropdown-lg i {
+    float: right;
+    margin-left: 10px;
+}
+.dropdown-menu > li > a {
+    text-align: right;
+}
+.dropdown-menu.dropdown-lg .drop-content h4 {
+    font-size: 13px;
+}
+[data-name="day"]:not([class^="text"]) {
+    color: #ebebeb;
+}
+[data-name="disabled-day"] {
+    color: #585858;
+}
+.table .table {
+    background-color: #272a31;
+}
+[data-name="md-persiandatetimepicker"] button {
+    font-size: 12px;
+    width: 100%;
+    background: #fddb01;
+    color: #000;
+    border: none;
+    padding: 5px 5px;
+}
+td .dropdown {
+    float: left;
+    width: 100%;
+}
+.bg-info {
+    background-color: #3b8536 !important;
+}
+[data-name="day"]:hover {
+    background-color: #5caa56 !important;
+}
+.text-danger {
+    color: #eb0500;
+}
+.search-box{
+    padding-bottom: 0;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.popover {
+    background-color: #52555d;
+}
+.popover-content .table .table {
+    background-color: #7c787b;
+}
+[data-name="md-persiandatetimepicker"] table.table td {
+    font-size: 14px;
+}
+.popover-title{
+    color: #0f0f0f;
+}
+.dropdown-menu {
+    left: 36px;
+}
