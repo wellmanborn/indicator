@@ -127,15 +127,19 @@ class LetterController extends Controller
     public function store(LetterRequest $request)
     {
         $path = is_null($request->file('attached_file')) ? null : $request->file('attached_file')->store('uploads');
-        $letter = Letter::create([
+        $create_array = [
             'company_name' => $request->get("company_name"),
             'letter_type' => $request->get("letter_type"),
             'description' => $request->get("description"),
             'action_date' => ShamsiDate::persian_date_to_datetime(ShamsiDate::faTOen($request->get("action_date"))),
             'attached_file' => $path,
             'created_by' => auth()->id()
-        ]);
-        $letter->letter_number = $this->create_letter_id($letter->letter_type, $letter->id);
+        ];
+        if(!env("LETTER_NUMBER_AUTOMATIC"))
+            $create_array['letter_number'] = $request->get("letter_number");
+        $letter = Letter::create($create_array);
+        if(env("LETTER_NUMBER_AUTOMATIC"))
+            $letter->letter_number = $this->create_letter_id($letter->letter_type, $letter->id);
         $letter->save();
         return redirect(route("letters"));
     }

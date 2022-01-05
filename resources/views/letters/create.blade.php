@@ -16,6 +16,21 @@
                     <div class="row">
                         <div class="col-md-12">
                             @csrf
+                            @if(!env("LETTER_NUMBER_AUTOMATIC"))
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="letter_number">{{ __("Letter Number") }}</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="letter_number" required
+                                               value="@if(isset($letter)){{ $letter->letter_number }}@else{{ old("letter_number") }}@endif"
+                                               type="text" name="letter_number">
+                                        @error('letter_number')
+                                        <ul class="parsley-errors-list filled" aria-hidden="false">
+                                            <li class="parsley-required">{{ $message }}</li>
+                                        </ul>
+                                        @enderror
+                                    </div>
+                                </div>
+                            @endif
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label" for="company_name">{{ __("Company Name") }}</label>
                                 <div class="col-sm-8">

@@ -36,7 +36,12 @@ class ViewHelper{
     }
 
     public static function show_letter_number($letter_number){
-        $ex = explode("-", $letter_number);
-        return "<span dir='ltr'>{$ex[0]}-<bdi>{$ex[1]}</bdi>-{$ex[2]}</span>";
+        if(env("LETTER_NUMBER_AUTOMATIC")){
+            $ex = explode("-", $letter_number);
+            return "<span dir='ltr'>{$ex[0]}-<bdi>{$ex[1]}</bdi>-{$ex[2]}</span>";
+        }else{
+            return $letter_number;
+        }
+
     }
 }

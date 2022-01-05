@@ -2,7 +2,7 @@ body{
     color: #bdbdbd;
 }
 .topbar-first {
-    background: #23262d;
+    background: #fedc00;
     border-bottom: 1px solid #fedc00;
     float: right;
     height: 57px;
@@ -12,30 +12,33 @@ body{
     z-index: 1;
 }
 a {
-    color: #efc100;
+    color: #fedc00;
+}
+.page-title i {
+    color: #fedc00;
 }
 .btn-default:hover {
-    border-color: #efc100;
+    border-color: #fedc00;
     color: #232323;
-    background: #efc100;
+    background: #fedc00;
 }
 .page-title a:hover {
-    border-color: #efc100;
+    border-color: #fedc00;
     color: #232323;
-    background: #efc100;
+    background: #fedc00;
 }
 .nav-bottom a:hover {
     color: #232323;
-    background: #efc100;
+    background: #fedc00;
 }
 .menu-toggle {
     padding-top:5px;
-    color: #efc100;
+    color: #fedc00;
 }
 .btn-default i{
     margin-right: 5px;
     margin-left: 5px;
-    color: #efc100;
+    color: #fedc00;
 }
 .btn-default:hover i{
     color: #fff;
@@ -53,7 +56,7 @@ a {
 }
 .topbar-first img{
     max-width: 180px;
-    margin-top:10px;
+    margin-top:8px;
 }
 div.grid-stack div .grid-stack-item-content{
     background: #272a31 !important;
@@ -127,26 +130,26 @@ div.dataTables_wrapper div.dataTables_length select{
 }
 .btn-border-theme {
     display: inline-block !important;
-    border: 1px solid #efc100 !important;
-    color: #efc100 !important;
+    border: 1px solid #fedc00 !important;
+    color: #fedc00 !important;
     border-radius: 2px !important;
     background: transparent !important;
 }
 .btn-theme{
-    background: #efc100;
+    background: #fedc00;
     color: #000;
 }
 .btn-border-theme:hover {
-    border-color: #efc100;
+    border-color: #fedc00;
     color: #000;
-    background: #efc100;
+    background: #fedc00;
 }
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-    color: #efc100;
+    color: #fedc00;
 }
 .btn-default-fill:hover,
 .btn-white:hover{
-    background: #efc100;
+    background: #fedc00;
     color: #232323;
 }
 .form-control {
@@ -160,7 +163,8 @@ div.dataTables_wrapper div.dataTables_length select{
     color: #EFEFEF;
 }
 .logo img{
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    max-height: 40px;
 }
 .modal-header{
     padding: 10px 15px;
@@ -214,7 +218,7 @@ ul.parsley-errors-list{
     background: none;
     border: none;
     text-align: right;
-    color: #efc100;
+    color: #fedc00;
     border-bottom: 1px solid #232323;
 }
 .dropdown-item:hover {
@@ -223,13 +227,13 @@ ul.parsley-errors-list{
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff;
     cursor: default;
-    background-color: #efc100;
-    border: 1px solid #efc100;
+    background-color: #fedc00;
+    border: 1px solid #fedc00;
     color: #232323;
     border-bottom-color: transparent;
 }
 .nav>li>a {
-    color: #efc100;
+    color: #fedc00;
     font-size: 13px;
     text-transform: uppercase;
     display: block;
@@ -244,7 +248,7 @@ ul.parsley-errors-list{
     margin-bottom: 8px;
 }
 .widget-box i {
-    color: #efc100;
+    color: #fedc00;
 }
 .widget-box i.loading {
     color: #9c9c9c;
@@ -280,9 +284,9 @@ td .dropdown{
     float: left
 }
 .btn-border-theme:focus {
-    border-color: #efc100;
+    border-color: #fedc00;
     color: #000;
-    background: #efc100;
+    background: #fedc00;
 }
 .panel-heading {
     padding: 0;
@@ -420,10 +424,10 @@ table.letter-view tr td{
 }
 /*
 fedc00
-efc100
+fedc00
 d9a305
 565656
 232323
 */
-#efc100
+#fedc00
 #9d69b7

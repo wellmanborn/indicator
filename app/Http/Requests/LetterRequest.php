@@ -23,11 +23,14 @@ class LetterRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        $rules = [
             'company_name' => 'required',
             'letter_type' => 'required|in:imported,exported,contract',
             'action_date' => 'required',
             'attached_file' => 'mimes:zip,pdf,doc,docx,xsl,xslx,jpg,jpeg,png,rar|max:15360'
         ];
+        if(!env("LETTER_NUMBER_AUTOMATIC"))
+            $rules['letter_number'] = 'required|min:3';
+        return $rules;
     }
 }
