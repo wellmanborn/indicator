@@ -18,6 +18,7 @@
                             <th class="no-sort">{{ __("Row") }}</th>
                             <th>{{ __("Name") }}</th>
                             <th>{{ __("Role") }}</th>
+                            <th>{{ __("Email") }}</th>
                             <th>{{ __("Created Date") }}</th>
                             <th>{{ __("Updated at") }}</th>
                             <th>{{ __("Status") }}</th>
@@ -31,6 +32,7 @@
                                     <th class="no-sort">{{ $i++ }}</th>
                                     <th>{{ $user->name }}</th>
                                     <th>{{ __($user->role) }}</th>
+                                    <th>{{ $user->email }}</th>
                                     <th class="text-en">{{ ViewHelper::to_persian_datetime($user->created_at) }}</th>
                                     <th class="text-en">{{ ViewHelper::to_persian_datetime($user->updated_at) }}</th>
                                     <th>{!! ViewHelper::get_status($user->active) !!}</th>

@@ -38,7 +38,10 @@ class ViewHelper{
     public static function show_letter_number($letter_number){
         if(env("LETTER_NUMBER_AUTOMATIC")){
             $ex = explode("-", $letter_number);
-            return "<span dir='ltr'>{$ex[0]}-<bdi>{$ex[1]}</bdi>-{$ex[2]}</span>";
+            if(count($ex) == 3)
+                return "<span dir='ltr'>{$ex[0]}-<bdi>{$ex[1]}</bdi>-{$ex[2]}</span>";
+            else
+                return $letter_number;
         }else{
             return $letter_number;
         }
